@@ -1,0 +1,182 @@
+.parralax{
+    background-image: linear-gradient(
+            rgba(33, 39, 75, 0.8),
+            rgba(13, 9, 78, 0.87)
+    ),url("../img/image1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    color: white;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.parralax2{
+     background-image: linear-gradient(
+             rgba(33, 39, 75, 0),
+             rgba(13, 9, 78, 0)
+     ),url("../img/peraImg2.jpg");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed;
+     height: 500px;
+     color: white;
+     text-align: center;
+     font-family: 'Ubuntu', sans-serif;
+
+ }
+.parralax3{
+    background-image: linear-gradient(
+            rgba(33, 39, 75, 0),
+            rgba(13, 9, 78, 0)
+    ),url("../img/peraImg3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    color: white;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.parralax img{
+    margin-top: 150px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.parralax h3{
+    margin-top: -10px;
+
+}
+.header_row{
+    background: linear-gradient(
+            rgba(19, 19, 19, 0.8),
+            rgba(6, 4, 41, 0.73));
+    height: 50px;
+    width: 101%;
+    margin-top: 65px;
+    padding-top: 15px;
+
+}
+
+#myProfile{
+    border-bottom: 2px solid #049079;
+}
+#name{
+    color: #068764 ;
+    margin-bottom: 0;
+    margin-top: 50px;
+    font-family: 'Ubuntu', sans-serif;
+}
+#designation{
+    margin-top: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+#description{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+#Skills{
+    margin-top: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: 2px solid #049079;
+    margin-bottom: 30px;
+}
+#skillsLabel #projectsLabel{
+    font-family: 'Ubuntu', sans-serif;
+}
+.skillList h4{
+    font-size: 22px;
+    color: #068764 ;
+}
+#htmlCanvas, #javaCanvas{
+
+}
+
+.col-md-4, .col-md-3, .col-md-6{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+
+}
+#skillJavaLabel, #skillCLabel, #skillCSharpLabel, #skillHtmlLabel, #skillCssLabel, #skillJsLabel, #skillAjaxLabel,
+#skillMySqlLabel, #skillMongoDbLabel, #skillPhpLabel, #skillNodeJsLabel, #skillBootstrapLabel, #skillChartJsLabel  {
+      font-size: 15px;
+}
+#skillJavaValue, #skillCValue, #skillCSharpValue, #skillHtmlValue, #skillCssValue, #skillJsValue, #skillAjaxValue,
+#skillMySqlValue, #skillMongoDbValue, #skillPhpValue, #skillNodeJsValue, #skillBootstrapValue, #skillChartJsValue{
+    font-size: 18px;
+}
+small{
+    font-size:6px;
+    opacity: 0.7;
+}
+.skillList{
+    margin-bottom: 50px;
+}
+#Projects{
+    margin-bottom: 50px;
+    border-bottom: 2px solid #049079;
+}
+.oneProject, .oneSkill{
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid rgba(255, 0, 0, .2);;
+
+}
+.oneProject h4{
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-size: 20px;
+}
+.oneProject h3{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 30px solid   #68df7a  ;
+    border-right: 30px solid transparent;
+}
+.oneProject p{
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+.projectContetns ul li, .skillContetns ul li{
+    font-size: 18px;
+    display: inline;
+}
+.projectContetns ul, .skillContetns ul{
+    margin-left: -40px;
+}
+.projectContetns h4 .label{
+    background-color:#da6a6a;
+}
+.imageArea{
+    margin-bottom: 20px;
+}
+.skillContetns p{
+    font-size: 16px;
+    width: 850px;
+    float: left;
+}
+#logo{
+    float: right;
+}
+#logo img{
+    max-width: 250px;
+    max-height: 250px;
+}
+.row .col-md-3 img{
+    width: 250px;
+    height: 150px;
+}
