@@ -7,7 +7,7 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 500px;
+
     color: white;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
@@ -43,6 +43,43 @@
     font-family: 'Ubuntu', sans-serif;
 
 }
+#navBar{
+    height: 100px;
+    background-color: #052030;
+    opacity: 0.8;
+    display: none;
+
+}
+#navBar img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    opacity: 1;
+}
+#navbarImage{
+    width: 150px;
+    margin-right: 10px;
+}
+#navbardesignation{
+    text-align: left;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    opacity: 0.8;
+}
+#navbardesignation h2{
+    margin-bottom: 0px;
+}
+#navbardesignation h3{
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+#contacts{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    text-align: left;
+    opacity: 0.8;
+}
 .parralax img{
     margin-top: 150px;
     height: 150px;
@@ -57,11 +94,20 @@
     background: linear-gradient(
             rgba(19, 19, 19, 0.8),
             rgba(6, 4, 41, 0.73));
-    height: 50px;
-    width: 101%;
+    text-align: center;
+    margin-left: 20px;
     margin-top: 65px;
-    padding-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
+}
+.header_row a{
+    color: white;
+    font-size: 15px;
+}
+.header_row #linkedInPro:hover{
+    text-decoration: none;
+    color: #68df7a;
 }
 
 #myProfile{
@@ -87,6 +133,12 @@
     font-family: 'Ubuntu', sans-serif;
     border-bottom: 2px solid #049079;
     margin-bottom: 30px;
+}
+.specSkill ul{
+    list-style-type: none;
+}
+.specSkill ul li{
+    margin-bottom: 12px;
 }
 #skillsLabel #projectsLabel{
     font-family: 'Ubuntu', sans-serif;
@@ -124,13 +176,16 @@ small{
     margin-bottom: 50px;
     border-bottom: 2px solid #049079;
 }
-.oneProject, .oneSkill{
+.oneProject, .oneSkill, .oneExperience{
     font-family: 'Ubuntu', sans-serif;
     margin-top: 50px;
     margin-left: 20px;
     margin-bottom: 50px;
     border-bottom: 2px solid rgba(255, 0, 0, .2);;
 
+}
+#extraSkills{
+    border-bottom: 2px solid #049079;
 }
 .oneProject h4{
     margin-bottom: 20px;
@@ -151,22 +206,23 @@ small{
     font-size: 16px;
     margin-bottom: 0px;
 }
-.projectContetns ul li, .skillContetns ul li{
+.projectContetns ul li, .skillContetns ul li, .experienceContetns ul li{
     font-size: 18px;
     display: inline;
 }
-.projectContetns ul, .skillContetns ul{
+.projectContetns ul, .skillContetns ul, .experienceContetns ul{
     margin-left: -40px;
 }
+
 .projectContetns h4 .label{
     background-color:#da6a6a;
 }
 .imageArea{
     margin-bottom: 20px;
 }
-.skillContetns p{
+.skillContetns p, .experienceContetns p{
     font-size: 16px;
-    width: 850px;
+    width: 75%;
     float: left;
 }
 #logo{
@@ -179,4 +235,79 @@ small{
 .row .col-md-3 img{
     width: 250px;
     height: 150px;
+}
+.experienceContetns ul{
+    width: 75%;
+    float: left;
+}
+.footerArea{
+     background-color: #323232;
+     max-width:100%;
+     color: white;
+
+ }
+
+.footerArea .details{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+.footerArea #profiles{
+     text-align: left;
+ }
+.footerArea #profiles h2 a{
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #2fb64b;
+}
+.footerArea #profiles h2 a:hover{
+    text-decoration: none;
+    color: #049079;
+    font-size: 18px;
+}
+.footerArea #profiles .fa{
+    font-size: 35px;
+    color: white;
+    padding-right: 5px;
+}
+#contactDetails h4{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+    margin-left: 25px;
+    color:  #2fb64b ;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+.footerArea #heading{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    margin-left: 25px;
+
+}
+.footerArea h4, #number h3, #email h3{
+    color:  #2fb64b ;
+    font-size: 17px;
+    text-align: left;
+}
+.footerArea h4{
+    margin-bottom: 0px;
+}
+.footerArea .glyphicon{
+    font-size: 18px;
+    padding-right: 5px;
+}
+#goldenStatement{
+    width: 100%;
+    border-top: 2px solid #049079;
+}
+#goldenStatement h2{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-size: 22px;
+    color: #28af65;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
 }

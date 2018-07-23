@@ -6,24 +6,46 @@
         <link rel="stylesheet" href="css/style.css">
         <script src="js/script.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
     </head>
     
     <body>
-        <div class="headerImg">
+    <div id="navBar" class="container-fluid">
 
+        <div class="row">
+            <div id="navbarImage" class="col-md-2"><img src="img/propic.jpg"></div>
+            <div id="navbardesignation" class="col-md-7">
+                <h2>Jayamal Jayamaha</h2>
+                <h3>Computer Engineer + Software And Web Developer</h3>
+            </div>
+            <div id="contacts" class="col-md-3">
+                <h4><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> jayamaljayamaha2@gmail.com</h4>
+                <h4><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>  (+94) 766183066</h4>
+            </div>
+
+        </div>
+    </div>
+        <div class="headerImg">
             <div class="parralax">
                 <img src="img/propic.jpg">
                 <h1>Jayamal Jayamaha</h1>
                 <h3>Computer Engineer + Software and Web Developer</h3>
 
-                <div class="row header_row">
-                    <div class="col-md-4"><a href="">LinkedIn</a> </div>
-                    <div class="col-md-4">jayamaljayamaha2@gmail.com</div>
-                    <div class="col-md-4">(+94) 766183066</div>
+                <div class="header_row container-fluid">
+                    <div class="row">
+                        <div class="col-md-4"><a id="linkedInPro" href="">LinkedIn</a> </div>
+                        <div class="col-md-4">jayamaljayamaha2@gmail.com</div>
+                        <div class="col-md-4">(+94) 766183066</div>
 
+                    </div>
                 </div>
+
             </div>
+
+
+        </div>
             <div class="bodyArea container">
                 <div id="myProfile">
                     <h1 id="name">JAYAMAL JAYAMAHA</h1>
@@ -39,143 +61,221 @@
                     <div id="programmingSkills" class="skillList">
                         <h4>Programming Skills</h4>
                         <div class="row">
-                            <div class="col-md-4">
-                                <canvas id="javaCanvas" >
-                                    <img id="javaLogo" src="img/Java-logo.png">
-                                </canvas>
-
+                            <div class="col-md-4 specSkill">
+                                <ul>
+                                    <li>
+                                        <canvas id="javaCanvas" >
+                                            <img id="javaLogo" src="img/Java-logo.png">
+                                        </canvas>
+                                    </li>
+                                    <li>
+                                        <span id="skillJavaLabel" class="label label-success ">JAVA</span>
+                                    </li>
+                                    <li>
+                                        <span id="skillJavaValue" class="label label-success ">8 <small>/10</small></span>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="col-md-4">
-                                <canvas id="cCanvas">
-                                    <img id="cLogo" src="img/index.png">
-                                </canvas>
+                            <div class="col-md-4 specSkill">
+                                <ul>
+                                    <li>
+                                        <canvas id="cCanvas">
+                                            <img id="cLogo" src="img/index.png">
+                                        </canvas>
+                                    </li>
+                                    <li>
+                                        <span id="skillCLabel" class="label label-success">C</span>
+                                    </li>
+                                    <li>
+                                        <span id="skillCValue" class="label label-success">5 <small>/10</small></span>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="col-md-4">
-                                <canvas id="cSharpCanvas">
-                                    <img id="cSharpLogo" src="img/C.png">
-                                </canvas>
+                            <div class="col-md-4 specSkill">
+                                <ul>
+                                    <li>
+                                        <canvas id="cSharpCanvas">
+                                            <img id="cSharpLogo" src="img/C.png">
+                                        </canvas>
+                                    </li>
+                                    <li>
+                                        <span id="skillCSharpLabel" class="label label-success ">C#</span>
+                                    </li>
+                                    <li>
+                                        <span id="skillCSharpValue" class="label label-success ">7 <small>/10</small></span>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4"><span id="skillJavaLabel" class="label label-success ">JAVA</span></div>
-                            <div class="col-md-4"><span id="skillCLabel" class="label label-success">C</span></div>
-                            <div class="col-md-4"><span id="skillCSharpLabel" class="label label-success ">C#</span></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4"><span id="skillJavaValue" class="label label-success ">8 <small>/10</small></span></div>
-                            <div class="col-md-4"><span id="skillCValue" class="label label-success">5 <small>/10</small></span></div>
-                            <div class="col-md-4"><span id="skillCSharpValue" class="label label-success ">7 <small>/10</small></span></div>
                         </div>
                     </div>
                     <div id="webDevelopmentSkills" class="skillList">
                         <h4>Web Development Skills</h4>
                         <div class="row">
-                            <div class="col-md-3">
-                                <canvas id="htmlCanvas" >
-                                    <img id="htmlLogo" src="img/html5.png">
-                                </canvas>
-
+                            <div class="col-md-3 specSkill">
+                                <ul>
+                                    <li>
+                                        <canvas id="htmlCanvas" >
+                                            <img id="htmlLogo" src="img/html5.png">
+                                        </canvas>
+                                    </li>
+                                    <li>
+                                        <span id="skillHtmlLabel" class="label label-success ">HTML</span>
+                                    </li>
+                                    <li>
+                                        <span id="skillHtmlValue" class="label label-success ">8 <small>/10</small></span>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="col-md-3">
-                                <canvas id="cssCanvas">
-                                    <img id="cssLogo" src="img/css3.png">
-                                </canvas>
+                            <div class="col-md-3 specSkill">
+                                <ul>
+                                    <li>
+                                        <canvas id="cssCanvas">
+                                            <img id="cssLogo" src="img/css3.png">
+                                        </canvas>
+                                    </li>
+                                    <li>
+                                        <span id="skillCssLabel" class="label label-success">CSS</span>
+                                    </li>
+                                    <li>
+                                        <span id="skillCssValue" class="label label-success">8 <small>/10</small></span>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="col-md-3">
-                                <canvas id="jsCanvas">
-                                    <img id="jsLogo" src="img/javascript.png">
-                                </canvas>
+                            <div class="col-md-3 specSkill">
+                                <ul>
+                                    <li>
+                                        <canvas id="jsCanvas">
+                                            <img id="jsLogo" src="img/javascript.png">
+                                        </canvas>
+                                    </li>
+                                    <li>
+                                        <span id="skillJsLabel" class="label label-success ">JS</span>
+                                    </li>
+                                    <li>
+                                        <span id="skillJsValue" class="label label-success ">6 <small>/10</small></span>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="col-md-3">
-                                <canvas id="ajaxCanvas">
-                                    <img id="ajaxLogo" src="img/ajax%20(2).png">
-                                </canvas>
+                            <div class="col-md-3 specSkill">
+                                <ul>
+                                    <li>
+                                        <canvas id="ajaxCanvas">
+                                            <img id="ajaxLogo" src="img/ajax%20(2).png">
+                                        </canvas>
+                                    </li>
+                                    <li>
+                                        <span id="skillAjaxLabel" class="label label-success ">AJAX</span>
+                                    </li>
+                                    <li>
+                                        <span id="skillAjaxValue" class="label label-success ">5 <small>/10</small></span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-3"><span id="skillHtmlLabel" class="label label-success ">HTML</span></div>
-                            <div class="col-md-3"><span id="skillCssLabel" class="label label-success">CSS</span></div>
-                            <div class="col-md-3"><span id="skillJsLabel" class="label label-success ">JS</span></div>
-                            <div class="col-md-3"><span id="skillAjaxLabel" class="label label-success ">AJAX</span></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3"><span id="skillHtmlValue" class="label label-success ">8 <small>/10</small></span></div>
-                            <div class="col-md-3"><span id="skillCssValue" class="label label-success">8 <small>/10</small></span></div>
-                            <div class="col-md-3"><span id="skillJsValue" class="label label-success ">6 <small>/10</small></span></div>
-                            <div class="col-md-3"><span id="skillAjaxValue" class="label label-success ">5 <small>/10</small></span></div>
-                        </div>
-
                     </div>
                     <div id="DbSkills" class="skillList">
                         <h4>Database Skills</h4>
                         <div class="row">
-                            <div class="col-md-6">
-                                <canvas id="mySqlCanvas" >
-                                    <img id="mySqlLogo" src="img/mysql.png">
-                                </canvas>
-
+                            <div class="col-md-6 specSkill">
+                                <ul>
+                                    <li>
+                                        <canvas id="mySqlCanvas" >
+                                            <img id="mySqlLogo" src="img/mysql.png">
+                                        </canvas>
+                                    </li>
+                                    <li>
+                                        <span id="skillMySqlLabel" class="label label-success ">My Sql</span>
+                                    </li>
+                                    <li>
+                                        <span id="skillMySqlValue" class="label label-success ">8 <small>/10</small></span>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="col-md-6">
-                                <canvas id="mongoDbCanvas">
-                                    <img id="mongoDbLogo" src="img/mongodb.png">
-                                </canvas>
+                            <div class="col-md-6 specSkill">
+                                <ul>
+                                    <li>
+                                        <canvas id="mongoDbCanvas">
+                                            <img id="mongoDbLogo" src="img/mongodb.png">
+                                        </canvas>
+                                    </li>
+                                    <li>
+                                        <span id="skillMongoDbLabel" class="label label-success">MongoDB</span>
+                                    </li>
+                                    <li>
+                                        <span id="skillMongoDbValue" class="label label-success">6 <small>/10</small></span>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6"><span id="skillMySqlLabel" class="label label-success ">My Sql</span></div>
-                            <div class="col-md-6"><span id="skillMongoDbLabel" class="label label-success">MongoDB</span></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6"><span id="skillMySqlValue" class="label label-success ">8 <small>/10</small></span></div>
-                            <div class="col-md-6"><span id="skillMongoDbValue" class="label label-success">6 <small>/10</small></span></div>
                         </div>
                     </div>
                     <div id="ServerSideSkills" class="skillList">
                         <h4>Server Side Skills</h4>
                         <div class="row">
-                            <div class="col-md-6">
-                                <canvas id="phpCanvas" >
-                                    <img id="phpLogo" src="img/PHP.png">
-                                </canvas>
-
+                            <div class="col-md-6 specSkill">
+                                <ul>
+                                    <li>
+                                        <canvas id="phpCanvas" >
+                                            <img id="phpLogo" src="img/PHP.png">
+                                        </canvas>
+                                    </li>
+                                    <li>
+                                        <span id="skillPhpLabel" class="label label-success ">PHP</span>
+                                    </li>
+                                    <li>
+                                        <span id="skillPhpValue" class="label label-success ">6 <small>/10</small></span>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="col-md-6">
-                                <canvas id="nodeJsCanvas">
-                                    <img id="nodeJsLogo" src="img/nodejs.png">
-                                </canvas>
+                            <div class="col-md-6 specSkill">
+                                <ul>
+                                    <li>
+                                        <canvas id="nodeJsCanvas">
+                                            <img id="nodeJsLogo" src="img/nodejs.png">
+                                        </canvas>
+                                    </li>
+                                    <li>
+                                        <span id="skillNodeJsLabel" class="label label-success">NodeJS</span>
+                                    </li>
+                                    <li>
+                                        <span id="skillNodeJsValue" class="label label-success">6 <small>/10</small></span>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6"><span id="skillPhpLabel" class="label label-success ">PHP</span></div>
-                            <div class="col-md-6"><span id="skillNodeJsLabel" class="label label-success">NodeJS</span></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6"><span id="skillPhpValue" class="label label-success ">6 <small>/10</small></span></div>
-                            <div class="col-md-6"><span id="skillNodeJsValue" class="label label-success">6 <small>/10</small></span></div>
                         </div>
                     </div>
                     <div id="FrameWorkSkills" class="skillList">
                         <h4>Frame Work Skills</h4>
                         <div class="row">
-                            <div class="col-md-6">
-                                <canvas id="bootstrapCanvas" >
-                                    <img id="bootstrapLogo" src="img/bootstrap%20(2).png">
-                                </canvas>
-
+                            <div class="col-md-6 specSkill">
+                                <ul>
+                                    <li>
+                                        <canvas id="bootstrapCanvas" >
+                                            <img id="bootstrapLogo" src="img/bootstrap%20(2).png">
+                                        </canvas>
+                                    </li>
+                                    <li>
+                                        <span id="skillBootstrapLabel" class="label label-success ">BootsTrap</span>
+                                    </li>
+                                    <li>
+                                        <span id="skillBootstrapValue" class="label label-success ">8 <small>/10</small></span>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="col-md-6">
-                                <canvas id="chartJsCanvas">
-                                    <img id="chartJsLogo" src="img/chartjs.png">
-                                </canvas>
+                            <div class="col-md-6 specSkill">
+                                <ul>
+                                    <li>
+                                        <canvas id="chartJsCanvas">
+                                            <img id="chartJsLogo" src="img/chartjs.png">
+                                        </canvas>
+                                    </li>
+                                    <li>
+                                        <span id="skillChartJsLabel" class="label label-success">ChartJS</span>
+                                    </li>
+                                    <li>
+                                        <span id="skillChartJsValue" class="label label-success">5 <small>/10</small></span>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6"><span id="skillBootstrapLabel" class="label label-success ">BootsTrap</span></div>
-                            <div class="col-md-6"><span id="skillChartJsLabel" class="label label-success">ChartJS</span></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6"><span id="skillBootstrapValue" class="label label-success ">8 <small>/10</small></span></div>
-                            <div class="col-md-6"><span id="skillChartJsValue" class="label label-success">5 <small>/10</small></span></div>
                         </div>
                     </div>
                 </div>
@@ -313,8 +413,92 @@
                         </div>
                     </div>
                 </div>
+
+                <div id="experience">
+                    <h2><span id="experienceLabel" class="label label-success">Experience</span></h2>
+                    <div class="oneExperience">
+                        <div class="experienceContetns">
+                            <h3>Frelancing in Fiveer</h3>
+                            <p>I am currently doing freelance in fiverr you can take a look at my fiverr profile here.
+                                Freelancing is a good way to improve skills and learn how to communicate  with customers,
+                                 how to understand customer expectations, how to negotiate with them
+                                and how to deliver a good product to them</p>
+                            <ul>
+                                <li><span class="label label-success">Web Designing</span></li>
+                                <li><span class="label label-success">Desktop App Developing</span></li>
+                                <li><span class="label label-success">Word Press</span></li>
+                                <li><span class="label label-success">Android App Developing</span></li>
+                            </ul>
+                            <div id="fiverLogo">
+                                <!-- Put this code anywhere in the body of your page where you want the badge to show up. -->
+
+                                <div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style='display: inline-block;'>
+                                    <a itemprop='url' href=https://www.fiverr.com/jruwntha rel="nofollow" target="_blank" style='display: inline-block;'>
+                                        <div class='fiverr-seller-content' id='fiverr-seller-widget-content-361b8507-cbf1-44a6-a47b-43e9c15eebfe' itemprop='contentURL' style='display: none;'></div>
+                                        <div id='fiverr-widget-seller-data' style='display: none;'>
+                                            <div itemprop='name' >jruwntha</div>
+                                            <div itemscope itemtype='http://schema.org/Organization'><span itemprop='name'>Fiverr</span></div>
+                                            <div itemprop='jobtitle'>Seller</div>
+                                            <div itemprop='description'>I am a computer engineer and software developer. I can build desktop applications and web applications and I know several languages like C /Java, Java swing,HTML,php,javascript. I also can build GUI applications as your needs and also web sites. If you want to know something in this software construction I can tell you about it</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <script id='fiverr-seller-widget-script-361b8507-cbf1-44a6-a47b-43e9c15eebfe' src='https://widgets.fiverr.com/api/v1/seller/jruwntha?widget_id=361b8507-cbf1-44a6-a47b-43e9c15eebfe' data-config='{"category_name":"Programming \u0026 Tech"}' async='true' defer='true'></script>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+
+         <footer>
+            <div class="footerArea container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="details">
+                            <h3 id="heading">Contact Details</h3>
+                            <h4><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Jayamal Jayamaha</h4>
+                            <div id="contactDetails">
+
+                                <h4>No: 696</h4>
+                                <h4>Nugape</h4>
+                                <h4>Pamunugama</h4>
+                                <h4>11350</h4>
+                                <h4>SriLanka</h4>
+                            </div>
+                            <div id="number">
+                                <h3><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>  +94 766183066</h3>
+                            </div>
+                            <div id="email">
+                                <h3><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> jayamaljayamaha2@gmail.com</h3>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div id="profiles">
+                            <h2><i class="fa fa-facebook-square"></i> <a href="https://www.facebook.com/profile.php?id=100018369544673">Jayamal Jayamaha</a></h2>
+                            <h2><i class="fa fa-fonticons"></i> <a href="https://www.fiverr.com/jruwntha">jruwantha</a></h2>
+                            <h2><i class="fa fa-github"></i> <a href="https://github.com/jayamaljayamaha">jayamaljayamaha</a></h2>
+                            <h2><i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/jayamal-jayamaha-a7a582126/">Jayamal Jayamaha</a></h2>
+                            <h2><i class="fa fa-wordpress"></i> <a href="https://jayamaljayamaha.wordpress.com/">Jayamal Jayamaha</a></h2>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="goldenStatement">
+                    <h2>
+                        "Dream is not that which you see while sleeping, it is something that does not let you sleep."
+                        -- Abdul Kalam
+                    </h2>
+                </div>
+            </div>
+        </footer>
 
 
     
