@@ -176,7 +176,7 @@ small{
     margin-bottom: 50px;
     border-bottom: 2px solid #049079;
 }
-.oneProject, .oneSkill, .oneExperience{
+.oneProject, .oneSkill, .oneExperience, .downloadMyResume{
     font-family: 'Ubuntu', sans-serif;
     margin-top: 50px;
     margin-left: 20px;
@@ -184,7 +184,7 @@ small{
     border-bottom: 2px solid rgba(255, 0, 0, .2);;
 
 }
-#extraSkills{
+#extraSkills, #experience{
     border-bottom: 2px solid #049079;
 }
 .oneProject h4{
@@ -206,11 +206,11 @@ small{
     font-size: 16px;
     margin-bottom: 0px;
 }
-.projectContetns ul li, .skillContetns ul li, .experienceContetns ul li{
+.projectContetns ul li, .skillContetns ul li, .experienceContetns ul li, .downloadMyResume ul li{
     font-size: 18px;
     display: inline;
 }
-.projectContetns ul, .skillContetns ul, .experienceContetns ul{
+.projectContetns ul, .skillContetns ul, .experienceContetns ul, .downloadMyResume ul{
     margin-left: -40px;
 }
 
@@ -239,6 +239,28 @@ small{
 .experienceContetns ul{
     width: 75%;
     float: left;
+}
+.downloadMyResume .col-md-4{
+    text-align: right;
+    margin-top: 15px;
+}
+#downloadButton{
+    font-size: 18px;
+}
+.glyphicon{
+    padding-right: 5px;
+}
+
+.linkButtonsList button{
+    padding: 2px 5px 2px 5px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #0d615f ;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+.linkButtonsList button:hover{
+    background-color:  #088583 ;
 }
 .footerArea{
      background-color: #323232;
