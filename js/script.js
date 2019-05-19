@@ -13,6 +13,7 @@ window.onload = function() {
     var nodeJsCirBar = document.getElementById('nodeJsCanvas');
     var bootstrapBar = document.getElementById('bootstrapCanvas');
     var angularBar = document.getElementById('angularCanvas');
+    var springCirBar = document.getElementById('springCanvas');
     var chartJsCirBar = document.getElementById('chartJsCanvas');
 
     var javaImage = document.getElementById('javaLogo');
@@ -28,14 +29,15 @@ window.onload = function() {
     var nodeJsImage = document.getElementById('nodeJsLogo');
     var bootstrapImage = document.getElementById('bootstrapLogo');
     var angularImage = document.getElementById('angularLogo');
+    var springImage = document.getElementById('springLogo');
     var chartJsImage = document.getElementById('chartJsLogo');
 
 
     var progressBars = [javaCirBar,cCirBar,cSharpCirBar,htmlCirBar,cssCirBar,jsCirBar,ajaxCirBar,mySqlCirBar,
-        mongoDbCirBar,phpCirBar,nodeJsCirBar,bootstrapBar, angularBar, chartJsCirBar];
+        mongoDbCirBar,phpCirBar,nodeJsCirBar,bootstrapBar, angularBar, springCirBar, chartJsCirBar];
 
     var images = [javaImage,cImage,cSharpImage,htmlImage,cssImage,jsImage,ajaxImage,mySqlImage,mongoDbImage,phpImage,
-        nodeJsImage,bootstrapImage, angularImage, chartJsImage];
+        nodeJsImage,bootstrapImage, angularImage, springImage, chartJsImage];
 
     var objects = {
         "metaData":[
@@ -53,6 +55,7 @@ window.onload = function() {
             {"X":40,"Y":40,"width":100,"height":100,"angle": Math.PI*9/10},
             {"X":25,"Y":25,"width":130,"height":130,"angle": Math.PI*9/10},
             {"X":25,"Y":25,"width":130,"height":130,"angle": Math.PI*1/2},
+            {"X":25,"Y":25,"width":130,"height":130,"angle": Math.PI*1/2}
         ]
     };
 

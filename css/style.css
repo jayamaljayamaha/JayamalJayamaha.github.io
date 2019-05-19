@@ -158,11 +158,13 @@
 
 }
 #skillJavaLabel, #skillCLabel, #skillCSharpLabel, #skillHtmlLabel, #skillCssLabel, #skillJsLabel, #skillAjaxLabel,
-#skillMySqlLabel, #skillMongoDbLabel, #skillPhpLabel, #skillNodeJsLabel, #skillBootstrapLabel, #skillAngularLabel, #skillChartJsLabel  {
+#skillMySqlLabel, #skillMongoDbLabel, #skillPhpLabel, #skillNodeJsLabel, #skillBootstrapLabel, #skillAngularLabel,
+#skillSpringLabel, #skillChartJsLabel  {
       font-size: 15px;
 }
 #skillJavaValue, #skillCValue, #skillCSharpValue, #skillHtmlValue, #skillCssValue, #skillJsValue, #skillAjaxValue,
-#skillMySqlValue, #skillMongoDbValue, #skillPhpValue, #skillNodeJsValue, #skillBootstrapValue, #skillAngularValue, #skillChartJsValue{
+#skillMySqlValue, #skillMongoDbValue, #skillPhpValue, #skillNodeJsValue, #skillBootstrapValue, #skillAngularValue,
+#skillSpringValue, #skillChartJsValue{
     font-size: 18px;
 }
 
