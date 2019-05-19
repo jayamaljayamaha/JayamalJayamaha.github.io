@@ -12,6 +12,7 @@ window.onload = function() {
     var phpCirBar = document.getElementById('phpCanvas');
     var nodeJsCirBar = document.getElementById('nodeJsCanvas');
     var bootstrapBar = document.getElementById('bootstrapCanvas');
+    var angularBar = document.getElementById('angularCanvas');
     var chartJsCirBar = document.getElementById('chartJsCanvas');
 
     var javaImage = document.getElementById('javaLogo');
@@ -26,13 +27,15 @@ window.onload = function() {
     var phpImage = document.getElementById('phpLogo');
     var nodeJsImage = document.getElementById('nodeJsLogo');
     var bootstrapImage = document.getElementById('bootstrapLogo');
+    var angularImage = document.getElementById('angularLogo');
     var chartJsImage = document.getElementById('chartJsLogo');
 
+
     var progressBars = [javaCirBar,cCirBar,cSharpCirBar,htmlCirBar,cssCirBar,jsCirBar,ajaxCirBar,mySqlCirBar,
-        mongoDbCirBar,phpCirBar,nodeJsCirBar,bootstrapBar,chartJsCirBar];
+        mongoDbCirBar,phpCirBar,nodeJsCirBar,bootstrapBar, angularBar, chartJsCirBar];
 
     var images = [javaImage,cImage,cSharpImage,htmlImage,cssImage,jsImage,ajaxImage,mySqlImage,mongoDbImage,phpImage,
-        nodeJsImage,bootstrapImage,chartJsImage];
+        nodeJsImage,bootstrapImage, angularImage, chartJsImage];
 
     var objects = {
         "metaData":[
@@ -47,10 +50,11 @@ window.onload = function() {
             {"X":35,"Y":45,"width":110,"height":110,"angle": Math.PI*7/10},
             {"X":48,"Y":45,"width":85,"height":100,"angle": Math.PI*7/10},
             {"X":40,"Y":40,"width":100,"height":100,"angle": Math.PI*7/10},
-            {"X":40,"Y":40,"width":100,"height":100,"angle": Math.PI*11/10},
+            {"X":40,"Y":40,"width":100,"height":100,"angle": Math.PI*9/10},
+            {"X":25,"Y":25,"width":130,"height":130,"angle": Math.PI*9/10},
             {"X":25,"Y":25,"width":130,"height":130,"angle": Math.PI*1/2},
         ]
-    }
+    };
 
 
     var i;
@@ -75,8 +79,27 @@ window.onload = function() {
         ctxs.drawImage(Image, objects.metaData[i].X, objects.metaData[i].Y, objects.metaData[i].width ,objects.metaData[i].height);
     }
 
-/*
-    var mongoDbImage = document.getElementById('mongoDbLogo');
-    ctxMongoDb.drawImage(mongoDbImage, 35, 35, 110 ,110);*/
+    /*
+        var mongoDbImage = document.getElementById('mongoDbLogo');
+        ctxMongoDb.drawImage(mongoDbImage, 35, 35, 110 ,110);*/
 };
+
+$(document).ready(function(){
+    var $nav = $('#navBar');
+
+    // fade in .navbar
+    $(function () {
+        $(window).scroll(function () {
+            // set distance user needs to scroll before we start fadeIn
+            if ($(this).scrollTop() > 100) { //For dynamic effect use $nav.height() instead of '100'
+                $nav.fadeIn();
+            } else {
+                $nav.fadeOut();
+            }
+        });
+    });
+
+});
+
+
 
